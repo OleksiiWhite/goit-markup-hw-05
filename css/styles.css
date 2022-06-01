@@ -24,6 +24,7 @@
   --topline-color: #ececec;
   --boder-portfolio-color: #eeeeee;
   --client-color: #afb1b8;
+  --function-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* общие */
@@ -132,7 +133,6 @@ body {
 
 .title {
   color: var(--title-text-color);
-  text-transform: uppercase;
 
   margin-top: 0;
   margin-bottom: 10px;
@@ -237,6 +237,8 @@ body {
   line-height: 1.17;
   text-align: left;
   letter-spacing: 0.02em;
+
+  transition: color 250ms var(--function-animation);
 }
 
 .site-nav .link:hover,
@@ -299,6 +301,8 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+
+  transition: color 250ms var(--function-animation);
 }
 
 .contact .link:hover,
@@ -327,10 +331,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+
+  transition: background-color 250ms var(--function-animation);
 }
 
 .button:hover,
-.dutton:focus {
+.button:focus {
   background-color: var(--secondary-accent-color);
 }
 
@@ -367,6 +373,10 @@ body {
 }
 
 /*чем мы занимаемся */
+
+.list.skill .title {
+  text-transform: uppercase;
+}
 
 .list.activity {
   display: flex;
@@ -464,12 +474,15 @@ body {
   width: 44px;
   height: 44px;
   color: var(--client-color);
+
+  transition: color 250ms var(--function-animation),
+    background-color 250ms var(--function-animation);
 }
 
 .link-contact:hover,
 .link-contact:focus {
-  background-color: var(--accent-color);
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .icon-contact {
   fill: currentColor;
@@ -496,6 +509,9 @@ body {
   width: 170px;
   height: 92px;
   color: var(--client-color);
+
+  transition: color 250ms var(--function-animation),
+    background-color 250ms var(--function-animation);
 }
 
 .link-client:hover,
@@ -551,6 +567,10 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
+
+  transition: color 250ms var(--function-animation),
+    background-color 250ms var(--function-animation),
+    box-shadow 250ms var(--function-animation);
 }
 
 .filter:hover,
@@ -604,6 +624,8 @@ body {
 
 .link.portfolio-link {
   display: block;
+
+  transition: box-shadow 250ms var(--function-animation);
 }
 
 .link.portfolio-link:hover,
@@ -631,11 +653,15 @@ body {
   line-height: 1.7;
   text-align: left;
   letter-spacing: 0.03em;
+
+  transition: color 250ms var(--function-animation);
 }
 
 .adress .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+
+  transition: color 250ms var(--function-animation);
 }
 
 .adress .link:hover,
@@ -659,6 +685,8 @@ body {
 .link-contact.footer-contact {
   color: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--function-animation);
 }
 
 .link-contact.footer-contact:hover,
