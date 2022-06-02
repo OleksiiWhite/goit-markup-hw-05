@@ -389,6 +389,42 @@ body {
     opacity 250ms var(--function-animation);
 }
 
+/* кнопка закрытия */
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+
+  transition: fill 250ms var(--function-animation),
+    border 250ms var(--function-animation);
+}
+
+.close-button:hover,
+.close-button:focus {
+  border: 1px solid var(--secondary-accent-color);
+}
+
+.close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  fill: rgba(0, 0, 0, 1);
+
+  width: 11px;
+  height: 11px;
+
+  fill: var(--secondary-accent-color);
+}
 /* наши особенности */
 
 .icon-impotent {
