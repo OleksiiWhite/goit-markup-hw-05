@@ -392,38 +392,48 @@ body {
 /* кнопка закрытия */
 .close-button {
   position: absolute;
+  /* z-index: 1; */
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
 
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  margin: 0;
+  padding: 0;
+
   cursor: pointer;
+  color: rgba(0, 0, 0, 1);
 
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
 
-  transition: fill 250ms var(--function-animation),
+  transition: color 250ms var(--function-animation),
     border 250ms var(--function-animation);
 }
 
 .close-button:hover,
 .close-button:focus {
   border: 1px solid var(--secondary-accent-color);
+  color: var(--accent-color);
 }
 
 .close-icon {
   position: absolute;
+  /* z-index: 2; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  fill: rgba(0, 0, 0, 1);
+  /* display: block; */
+  fill: currentColor;
 
   width: 11px;
   height: 11px;
-
-  fill: var(--secondary-accent-color);
 }
 /* наши особенности */
 
