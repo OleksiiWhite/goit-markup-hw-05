@@ -603,12 +603,12 @@ body {
   color: var(--client-color);
 
   transition: color 250ms var(--function-animation),
-    background-color 250ms var(--function-animation);
+    border-color 250ms var(--function-animation);
 }
 
 .link-client:hover,
 .link-client:focus {
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
   color: var(--accent-color);
 }
 .client-icon {
